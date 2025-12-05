@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webinar: Bajak Traffic 2025 (Dark Edition)</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#FF6B35',       
+                        'brand-orange-dim': '#CC4412',
+                        'dark-bg': '#020617',     /* Slate 950 (Hampir Hitam) */
+                        'dark-card': '#0F172A',   /* Slate 900 */
+                        'dark-border': '#1E293B', /* Slate 800 */
+                        'neon-green': '#00FFA3'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 20px -5px rgba(255, 107, 53, 0.5)',
+                        'card-hover': '0 20px 40px -15px rgba(0,0,0,0.5)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { margin: 0; padding: 0; overflow-x: hidden; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        
+        /* Glow Animation */
+        @keyframes glow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+        .glow-effect { animation: glow 3s infinite ease-in-out; }
+    </style>
+</head>
+<body class="bg-dark-bg text-white antialiased w-full selection:bg-brand-orange selection:text-white">
+
+    <main class="w-full max-w-full overflow-hidden">
+        <div id="hero-section"></div>
+        <div id="strategies-section"></div>
+        <div id="audience-section"></div>
+        <div id="speakers-section"></div>
+        <div id="faq-section"></div>
+        <div id="footer-section"></div>
+    </main>
+
+    <a href="https://wa.me/6285894448143" target="_blank" class="fixed bottom-6 right-6 z-50 group">
+        <div class="bg-[#25D366] text-dark-bg w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-3xl shadow-[0_0_30px_rgba(37,211,102,0.4)] hover:shadow-[0_0_50px_rgba(37,211,102,0.6)] hover:-translate-y-1 transition-all duration-300 border-2 border-white/20">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </a>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
